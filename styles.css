@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Dancing+Script:wght@500&family=Hanken+Grotesk:ital,wght@1,300&family=Heebo&family=Inconsolata:wght@300;400&family=Itim&family=Montserrat:wght@300&family=Open+Sans:ital,wght@1,300&family=Roboto+Condensed&family=Space+Mono&display=swap');
 
+*{
+    box-sizing: border-box;
+}
+
 :root{
     --header-font: 'Dancing Script', cursive;
 }
@@ -8,4 +12,13 @@ h1{
     font-family: var(--header-font);
     text-align: center;
     text-decoration: underline;
+}
+
+.navlinks>li{
+    grid-area: nav;
+    list-style: none;
+    display: inline;
+    padding: 25px;
+    font-size: medium;
+    color: gray;
 }
