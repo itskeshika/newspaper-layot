@@ -6,23 +6,20 @@
 body{
     padding: 25px;
 }
-
 :root{
     --header-font: 'Dancing Script', cursive;
     --article-header: 'Hanken Grotesk', ital;
 }
-
 h1{
     font-family: var(--header-font);
     text-align: center;
     text-decoration: underline;
 }
-
 .navlinks{
     grid-area: nav;
     list-style: none;
     padding: 25px;
-    font-size: medium;
+    font-size: larger;
     color: gray;
     display: flex;
     justify-content: space-around;
@@ -60,7 +57,6 @@ h2{
                          "story-1 story-2 story-3"
                          "story-4 story-5 story-5";
 }
-
 .story-1{
     border-left: 2px solid black;
     border-right: 2px solid black;
@@ -71,8 +67,9 @@ h2{
     border-bottom: 2px solid black;
 }
 .story-3{
-    border-left: 2px solid black;
+    border-right: 2px solid black;
     border-bottom: 2px solid black;
+    border-left: 2px solid black;
     
 }
 .story-4{
@@ -81,6 +78,6 @@ h2{
     border-bottom: 2px solid black;
 }
 .story-5{
-    border-left: 2px solid black;
+    border-right: 2px solid black;
     border-bottom: 2px solid black;
 }
