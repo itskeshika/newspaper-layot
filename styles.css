@@ -3,9 +3,13 @@
 *{
     box-sizing: border-box;
 }
+body{
+    padding: 25px;
+}
 
 :root{
     --header-font: 'Dancing Script', cursive;
+    --article-header: 'Hanken Grotesk', ital;
 }
 
 h1{
@@ -14,11 +18,69 @@ h1{
     text-decoration: underline;
 }
 
-.navlinks>li{
+.navlinks{
     grid-area: nav;
     list-style: none;
-    display: inline;
     padding: 25px;
     font-size: medium;
     color: gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    margin: 0;
+}
+h2{
+    padding: 25px;
+    font-family: var(--article-header);
+}
+.coding-hardwork{
+    grid-area: story-1;
+    padding: 25px;
+}
+.Donald-speech{
+    grid-area: story-2;
+    padding: 25px;
+}
+.elon-space{
+    grid-area: story-3;
+    padding: 15px;
+}
+.indigeneous-day{
+    grid-area:story-4 ;
+    padding: 25px;
+}
+.turkey-earthquake{
+    grid-area:story-5;
+    padding: 25px;
+}
+.main-body{
+    display: grid;
+    grid-template-areas: "nav nav nav"
+                         "story-1 story-2 story-3"
+                         "story-4 story-5 story-5";
+}
+
+.story-1{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.story-2{
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.story-3{
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    
+}
+.story-4{
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.story-5{
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
 }
